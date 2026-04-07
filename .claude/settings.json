@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "read_file",
+      "replace_string_in_file",
+      "create_file",
+      "list_dir",
+      "grep_search",
+      "semantic_search",
+      "run_in_terminal"
+    ],
+    "deny": []
+  }
+}
