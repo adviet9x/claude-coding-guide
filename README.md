@@ -58,6 +58,9 @@
 - [Debug khi Claude không tuân thủ](08-troubleshooting/debugging-agent.md)
 - [FAQ — Câu hỏi thường gặp](08-troubleshooting/faq.md)
 
+### 9. [Áp Dụng Cho Dự Án Mới](09-adapt-new-project/)
+- [Hướng dẫn chuyển .claude/ sang stack khác](09-adapt-new-project/adapt-guide.md)
+
 ---
 
 ## 🎯 Ai nên đọc?
@@ -66,7 +69,7 @@
 |-----------|------------|
 | Mới dùng Claude | Chương 1 → 2 → 3 |
 | Đã dùng, muốn tối ưu | Chương 3 → 5 → 6 |
-| Muốn setup dự án mới | Chương 2 → 7 (templates) |
+| Muốn setup dự án mới | Chương 2 → 7 → 9 |
 | Gặp vấn đề | Chương 8 |
 
 ## ⚡ Quick Start
