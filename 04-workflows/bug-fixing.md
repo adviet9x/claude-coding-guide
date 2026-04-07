@@ -92,3 +92,9 @@ Test phải:
 | Logic sai | "Hàm X trả về sai giá trị khi input [Y]. Debug." |
 | Performance | "Endpoint X chậm (>2s). Tìm bottleneck." |
 | Lỗi chỉ Production | "Lỗi chỉ xảy ra ở production. Kiểm tra env vars, config." |
+
+---
+
+## Xem Thêm
+- [Viết Tests](testing.md) — viết regression test sau khi fix
+- [Troubleshooting](../08-troubleshooting/common-issues.md) — các lỗi thường gặp với Claude

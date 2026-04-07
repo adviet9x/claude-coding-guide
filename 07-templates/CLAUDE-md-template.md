@@ -27,10 +27,10 @@
 
 ## Structure
 \`\`\`
-src/
+[project]/
 ├── [folder1]/    # [mô tả]
 ├── [folder2]/    # [mô tả]
-└── [entry].js    # Entry point
+└── [entry point] # Entry point (main.py, app.py, ...)
 \`\`\`
 ```
 

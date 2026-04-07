@@ -87,3 +87,9 @@ Sau khi refactor:
 - [ ] Import cũ vẫn hoạt động
 - [ ] Không có file orphan (import bị broken)
 - [ ] Code ngắn hơn hoặc clear hơn
+
+---
+
+## Xem Thêm
+- [Viết Tests](testing.md) — đảm bảo tests vẫn pass sau refactor
+- [Code Review](code-review.md) — review lại code sau refactor

@@ -75,4 +75,10 @@ Pattern: `test_[action]_[expected_result]_when_[condition]`
 - Yêu cầu Claude viết test **trước** code (TDD) cho logic phức tạp
 - Nói rõ framework: `pytest` / `vitest` / `jest`
 - Yêu cầu mock external dependencies
-- Luôn chạy tests sau khi viết: `npm test` / `pytest`
+- Luôn chạy tests sau khi viết: `pytest` / `npm test`
+
+---
+
+## Xem Thêm
+- [Bug Fixing](bug-fixing.md) — viết regression test khi fix bug
+- [Tính Năng Mới](new-feature.md) — quy trình tạo feature có test

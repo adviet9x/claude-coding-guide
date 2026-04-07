@@ -53,6 +53,51 @@ Output: [ví dụ output]
 
 ---
 
+## Ví Dụ Thực Tế: Security Review Skill
+
+```markdown
+---
+name: security-review
+description: >
+  Rà soát bảo mật cho Python/Flask code —
+  kiểm tra injection, auth, input validation, secrets.
+applyTo: "**/*.py"
+---
+
+# Security Review
+
+## Trigger
+Kích hoạt khi user yêu cầu: review security, kiểm tra bảo mật, audit code
+
+## Pre-conditions
+- [ ] File target là Python (.py)
+- [ ] Có quyền đọc file
+
+## Steps
+
+### Step 1: Scan Input Validation
+1. Tìm tất cả request.args, request.form, request.json
+2. Kiểm tra có validate/sanitize trước khi dùng không
+
+### Step 2: Kiểm tra Authentication
+1. Tìm routes thiếu @login_required
+2. Kiểm tra session handling
+
+### Step 3: Kiểm tra Secrets
+1. Scan hardcoded strings giống API key / password
+2. Verify dùng os.environ cho sensitive values
+
+## Post-conditions
+- [ ] Báo cáo danh sách vulnerabilities (Critical/High/Medium/Low)
+- [ ] Đề xuất fix cho mỗi issue
+
+## Error Handling
+- Nếu file quá lớn (>1000 dòng) → chia thành sections, review từng phần
+- Nếu không rõ context → hỏi user về business logic
+```
+
+---
+
 ## applyTo Patterns
 
 | Pattern | Áp dụng cho |

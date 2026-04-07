@@ -23,9 +23,9 @@ Báo cáo kết quả.
 ### 1. Validate
 ```
 Chạy kiểm tra pre-deploy:
-- npm test (hoặc pytest)
-- npm run build (hoặc build command)
-- npm audit (dependency security)
+- pytest tests/ -v (hoặc npm test)
+- pip audit / safety check (dependency security)
+- flake8 / ruff check (lint)
 ```
 
 ### 2. Database
@@ -39,9 +39,10 @@ Kiểm tra database migrations:
 ### 3. Deploy
 ```
 # Tùy platform
-git push origin main          # Auto-deploy (Vercel, Railway)
-docker build && docker push   # Container deploy
+git push origin main          # Auto-deploy (Railway, Render, Fly.io)
+docker build && docker push   # Container deploy (VPS, AWS ECS)
 ./scripts/deploy.sh           # Custom script
+gunicorn app:app              # Direct deploy (systemd, supervisor)
 ```
 
 ### 4. Verify
@@ -73,3 +74,9 @@ Nếu deploy gặp lỗi:
 - Claude có thể tạo **GitHub Actions workflow** cho CI/CD tự động
 - Luôn deploy **staging** trước **production**
 - Không để Claude deploy trực tiếp lên production — cần approval
+
+---
+
+## Xem Thêm
+- [Viết Tests](testing.md) — đảm bảo tests pass trước khi deploy
+- [Code Review](code-review.md) — review trước khi deploy production

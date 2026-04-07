@@ -62,6 +62,12 @@ OK hay cần sửa gì?
 - [ ] Error handling đầy đủ
 - [ ] Không code duplication
 
+---
+
+## Xem Thêm
+- [Refactoring](refactoring.md) — cải thiện code sau review
+- [Viết Tests](testing.md) — bổ sung tests thiếu
+
 ### Tests
 - [ ] Unit tests cho business logic
 - [ ] Edge cases covered

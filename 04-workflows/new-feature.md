@@ -89,6 +89,13 @@ Chạy toàn bộ test suite để verify nothing broken.
 
 ---
 
+## Xem Thêm
+- [Viết Tests](testing.md) — chi tiết về các loại test và prompt mẫu
+- [Code Review](code-review.md) — checklist review trước khi merge
+- [Deployment](deployment.md) — deploy tính năng mới
+
+---
+
 ## Step 5: Review
 
 ```

@@ -159,3 +159,11 @@ Claude tra cứu file map thay vì scan
 | Test fail | "Chạy test trước/sau mỗi sửa" |
 | Không tìm file | Cho path chính xác, FILE_MAP |
 | Lệnh lỗi | Cho biết OS, path, env |
+
+---
+
+## Xem Thêm
+- [Debug Agent](debugging-agent.md) — khi Claude không follow rules
+- [FAQ](faq.md) — câu hỏi thường gặp
+- [Memory System](../05-memory-system/memory-overview.md) — cách dùng memory để giữ context
+- [Bug Fixing Workflow](../04-workflows/bug-fixing.md) — quy trình fix bug với Claude

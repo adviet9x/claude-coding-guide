@@ -43,7 +43,7 @@
 ### Cài đặt
 ```bash
 # macOS / Linux
-curl -fsSL https://claude.ai/install.sh | sh
+curl -fsSL https://www.anthropic.com/claude-code/install.sh | sh
 
 # Hoặc dùng npm
 npm install -g @anthropic-ai/claude-code

@@ -1,27 +1,29 @@
 # Claude AI Configuration — Reference Template
 
-> Bộ `.claude/` mẫu tối ưu, rút từ kinh nghiệm thực tế dự án TopicForge.
+> Bộ `.claude/` mẫu tối ưu cho dự án Python/Flask/MongoDB.
 > Copy folder này vào root dự án, chỉnh sửa cho phù hợp.
 
-## Tại sao bộ này tốt hơn?
+## Tại sao dùng bộ này?
 
-Bộ `.claude/` gốc của TopicForge có **vấn đề nghiêm trọng**:
-- 13 rule files viết cho **JS/TS** nhưng project là **Python/Flask/MongoDB**
-- `tech-stack.md` dài 370 dòng — quá tốn token
-- Agents mô tả team Node.js — không khớp thực tế
-- Commands dùng `npm` — project không có `package.json`
+Khi dùng Claude AI hỗ trợ code, bộ `.claude/` cấu hình tốt sẽ giúp:
+- Claude **hiểu đúng** tech stack và conventions của dự án
+- **Tiết kiệm token** — rules ngắn gọn, chỉ chứa thông tin cần thiết
+- **Output chính xác** — agents/skills khớp với workflow thực tế
 
-Bộ mẫu này đã fix tất cả:
+Bộ mẫu này được thiết kế theo nguyên tắc:
+- Rules viết cho **đúng stack** (Python/Flask/MongoDB)
+- Mỗi file **< 80 dòng** — tối ưu token
+- Agents phân vai rõ ràng, không trùng lặp
 
-| Tiêu chí | Bộ cũ (gốc) | Bộ mới (mẫu) |
-|----------|-------------|--------------|
-| Rules | 13 files, 1,680 dòng | 8 files, ~480 dòng |
-| Agents | 7 files, 1,101 dòng | 5 files, ~350 dòng |
-| Commands | 3 files, 103 dòng | 4 files, ~130 dòng |
-| Skills | 2 files, 112 dòng | 3 skills, ~180 dòng |
-| **Tổng** | **~3,086 dòng** | **~1,200 dòng** |
-| Token/session | ~25K tokens | **~10K tokens** |
-| Khớp với project | ❌ Sai stack | ✅ Đúng 100% |
+### Thống kê
+
+| Thành phần | Số lượng | Dung lượng |
+|-----------|---------|-----------|
+| Rules | 8 files | ~480 dòng |
+| Agents | 5 files | ~350 dòng |
+| Commands | 4 files | ~130 dòng |
+| Skills | 3 skills | ~180 dòng |
+| **Tổng** | **20 files** | **~1,200 dòng (~10K tokens)** |
 
 ## Cách sử dụng
 

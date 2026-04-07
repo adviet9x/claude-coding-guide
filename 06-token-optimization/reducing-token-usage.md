@@ -122,7 +122,7 @@ Message 5: "Đọc repo memory/architecture" ← ít token hơn
 
 ---
 
-## 5. Tối Ưu CLAUDE.md & Rules
+## 5. Tối Ưu System Prompt & Configuration
 
 ### CLAUDE.md tối ưu
 ```
